@@ -40,7 +40,7 @@
         }
     </style>
 </head>
-<body class="bg-brand-900 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white" x-data="{ mobileMenu: false, downloadModal: false }">
+<body class="bg-brand-900 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white" x-data="{ mobileMenu: false }">
 
     <!-- Header / Navbar -->
     <header class="fixed top-0 left-0 right-0 z-50 glass border-b border-white/5 transition-all duration-300">
@@ -59,9 +59,10 @@
             </nav>
 
             <div>
-                <button @click="downloadModal = true" class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-6 py-3 rounded-xl transition shadow-lg shadow-indigo-600/30">
-                    Télécharger .EXE
-                </button>
+                <a href="./Minecraft-Launcher-Setup.exe" class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-6 py-3 rounded-xl transition shadow-lg shadow-indigo-600/30 inline-flex items-center space-x-2">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Télécharger .EXE</span>
+                </a>
             </div>
         </div>
     </header>
@@ -85,13 +86,13 @@
             </p>
 
             <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
-                <a href="https://github.com/YutsiOFF/Gemini1/releases/download/v1.0.0/Minecraft.Custom.Launcher.Setup.1.0.0.exe" class="w-full sm:w-auto bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-extrabold px-9 py-4 rounded-2xl transition shadow-2xl shadow-indigo-600/40 hover:scale-105 transform text-lg flex items-center justify-center space-x-3">
+                <a href="./Minecraft-Launcher-Setup.exe" class="w-full sm:w-auto bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-extrabold px-9 py-4 rounded-2xl transition shadow-2xl shadow-indigo-600/40 hover:scale-105 transform text-lg flex items-center justify-center space-x-3">
                     <i class="fa-brands fa-windows text-xl"></i>
-                    <span>Télécharger le .EXE (Setup)</span>
+                    <span>Télécharger le .EXE (Direct)</span>
                 </a>
             </div>
 
-            <p class="text-xs text-slate-500 mt-6 tracking-wide">Windows 10/11 (x64) • Installateur sécurisé NSIS</p>
+            <p class="text-xs text-slate-500 mt-6 tracking-wide">Windows 10/11 (x64) • Installateur direct depuis le site</p>
         </div>
     </section>
 
